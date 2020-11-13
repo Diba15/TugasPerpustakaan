@@ -41,14 +41,14 @@ public class Buku extends Koleksi {
     @Override
     public void display() {
         System.out.println("No Koleksi : "+getNoKoleksi());
-        System.out.println("Nama : "+getNama()+"\tPenerbit : "+getPenerbit());
+        System.out.println("Nama  : "+getNama()+"\tPenerbit : "+getPenerbit());
+        System.out.println("Jenis : "+getJenis()+"\nStatus : "+getStatus());
         System.out.println("Tanggal Terbit : "+getTanggalTerbit());
-        System.out.println("Jenis : "+getJenis()+"\tStatus : "+getStatus());
         System.out.println("=======================================================");
         System.out.println("Info Buku :");
         System.out.println("Pengarang : "+getPengarang());
-        System.out.println("ISSN : "+getIssn()+"\tISBN : "+getIsbn());
-        System.out.println("DOI : "+getDoi()+"\tArxiv ID : "+getArxivId());
+        System.out.println("ISSN \t: "+getIssn()+"\t\tISBN : "+getIsbn());
+        System.out.println("DOI \t: "+getDoi()+"\tArxiv ID : "+getArxivId());
         System.out.println("Tahun Masuk : "+getTahunMasuk());
         System.out.println("-------------------------------------------------------");
     }

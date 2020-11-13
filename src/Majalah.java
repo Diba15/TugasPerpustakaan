@@ -19,6 +19,14 @@ public class Majalah extends Koleksi {
 
     @Override
     public void display() {
-
+        System.out.println("No Koleksi : "+getNoKoleksi());
+        System.out.println("Nama  : "+getNama()+"\tPenerbit : "+getPenerbit());
+        System.out.println("Jenis : "+getJenis()+"\nStatus : "+getStatus());
+        System.out.println("Tanggal Terbit : "+getTanggalTerbit());
+        System.out.println("=======================================================");
+        System.out.println("Info Majalah :");
+        System.out.println("No Edisi : "+getNoEdisi());
+        System.out.println("Jenis Terbit : "+getJenisTerbit());
+        System.out.println("-------------------------------------------------------");
     }
 }
