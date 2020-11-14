@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class OpenLibrary {
     private ArrayList<Koleksi> ar = new ArrayList<>();
@@ -40,6 +41,22 @@ public class OpenLibrary {
             if (koleksi.getJenis().equalsIgnoreCase("Cakram Digital")) {
                 koleksi.display();
             }
+        }
+    }
+
+    public void compare(int pilihUrut) {
+        Comparator<Koleksi> title = new CompareTitle();
+        Comparator<Koleksi> noKol = new CompareNoKol();
+        switch (pilihUrut) {
+            case 1:
+                ar.sort(title);
+                break;
+            case 2:
+                ar.sort(noKol);
+                break;
+            default:
+                System.out.println("Pilih yang ada pada pilihan!");
+                break;
         }
     }
 }
