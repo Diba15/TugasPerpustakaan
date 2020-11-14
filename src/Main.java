@@ -286,6 +286,7 @@ public class Main {
                 System.out.println("Pilih yang ada Pada Pilihan");
                 break;
         }
+        System.out.println();
     }
 
     public static void runThis() {
@@ -313,9 +314,34 @@ public class Main {
     }
 
     public static void dummy() {
-        openLibrary.addKoleksi(new Buku(1, "Petualangan Dimas", "Kadokawa",
+        openLibrary.addKoleksi(new Buku(1, "Petualangan Dimas", "BIN",
                 "10 Maret 2001", "Buku", "Ada", "Dimas", "A0192",
                 "A1029", "A82828", "PQO102", 2001));
+
+        openLibrary.addKoleksi(new Buku(5, "Mau Hidup Sehat", "BIN",
+                "10 Maret 2001", "Buku", "Ada", "Dimas", "A0192",
+                "A1029", "A82828", "PQO102", 2001));
+
+        openLibrary.addKoleksi(new Majalah(2,"Baju Baru",
+                "SoKrenz","20 Maret 2020","Majalah","Ada",
+                10,"Mingguan"));
+
+        openLibrary.addKoleksi(new Majalah(6,"Celana Baru",
+                "SoKrenz","20 Maret 2020","Majalah","Ada",
+                10,"Mingguan"));
+
+        openLibrary.addKoleksi(new Koran(3, "Kelakuan Tikus",
+                "Bang Alex", "28 Maret 2020", "Koran", "Ada", "Harian"));
+
+        openLibrary.addKoleksi(new Koran(7, "Corona Musnah",
+                "Bang Alex", "28 Maret 2021", "Koran", "Ada", "Harian"));
+
+        openLibrary.addKoleksi(new CakramDigital(4, "Si Bolang", "Trens 9",
+                "30 Maret 2020", "Cakram Digital", "Rusak", "Bluray"));
+
+        openLibrary.addKoleksi(new CakramDigital(8, "Narto", "Gloubal",
+                "30 Maret 2020", "Cakram Digital", "Ada", "Bluray"));
+
     }
 
     public static void main(String[] args) {
